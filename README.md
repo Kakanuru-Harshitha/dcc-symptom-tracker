@@ -1,16 +1,58 @@
-# symptomtracker
+\# DCC Symptom Tracker App
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+A Flutter mobile application designed to help patients with Discordant Chronic Comorbidities (DCCs) track daily symptoms, monitor trends, and generate concise health insights.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+\## 📱 Features
+
+
+
+\- 📅 \*\*Calendar-Based Logging\*\*: Intuitive calendar interface to log symptoms daily.
+
+\- 📊 \*\*Symptom Trend Analysis\*\*: Visualize symptom trends over time with charts.
+
+\- 🧠 \*\*AI Health Insights\*\*: (Optional) Integrates with OpenAI API to generate health summaries.
+
+\- 🗃️ \*\*Local Data Storage\*\*: Stores data using `sqflite` for offline access.
+
+\- 📤 \*\*Export Reports\*\*: Allows users to export symptom reports for clinical visits.
+
+\- 🔔 \*\*Notifications\*\*: Daily reminders to log symptoms.
+
+
+
+\## 💡 Technologies Used
+
+
+
+\- \*\*Flutter\*\* \& \*\*Dart\*\*
+
+\- \*\*sqflite\*\* – local storage
+
+\- \*\*Provider\*\* – state management
+
+\- \*\*charts\_flutter\*\* – symptom trend visualization
+
+\- \*\*HTTP\*\* – API requests
+
+\- \*\*OpenAI GPT-4\*\* (optional, API key required via `--dart-define`)
+
+
+
+\## 🔐 Environment Setup
+
+
+
+This app expects an OpenAI API key provided securely at runtime:
+
+
+
+```bash
+
+flutter run --dart-define=OPENAI\_API\_KEY=your\_openai\_key\_here
+
+
+
