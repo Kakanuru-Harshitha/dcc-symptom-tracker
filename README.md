@@ -54,5 +54,19 @@ This app expects an OpenAI API key provided securely at runtime:
 
 flutter run --dart-define=OPENAI\_API\_KEY=your\_openai\_key\_here
 
+#Folder Structure
+
+lib/
+├── models/           # Data models
+├── screens/          # UI Screens
+├── services/         # Backend services (API, DB, trends)
+├── providers/        # State management
+├── utils/            # Helpers
+└── main.dart         # App entry point
+
+
+
+
+
 
 
